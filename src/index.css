@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.card {
+  display: flex;
+  justify-content: space-between;
+  transition: all 0.3s;
+}
+
+.list-container {
+  display: grid;
+  display: -ms-grid;
+  grid-template-columns: 50% 50%;
+  -ms-grid-columns: 50% 50%;
+}
+
+.list-container a {
+  padding: 15px;
+  height: 12rem;
+  background-color: #065f46;
+  color: white;
+  transition: all 0.3s;
+}
+
+.list-container a:nth-child(4n),
+.list-container a:nth-child(4n + 1) {
+  background-color: #059669;
+  color: white;
+}
+
+@media (min-width: 320px) {
+  .list-container {
+    grid-template-columns: 50% 50%;
+    -ms-grid-columns: 50% 50%;
+  }
+
+  .regions {
+    grid-template-columns: 50% 50%;
+    -ms-grid-columns: 50% 50%;
+  }
+}
+
+@media (min-width: 768px) {
+  .list-container {
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    -ms-grid-columns: repeat(4, 25%);
+  }
+
+  .regions {
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    -ms-grid-columns: repeat(4, 25%);
+  }
+
+  .regions li:nth-child(4n),
+  .regions li:nth-child(4n + 1) {
+    background-color: #065f46;
+    color: white;
+  }
+
+  .list-container a {
+    border: 0.1px solid #0c4a6e;
+  }
+}
