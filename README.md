@@ -2,6 +2,10 @@
 
 The covid19-track-app project is built with react to show all corona cases around the world and for each specific country
 
+## Live
+
+[https://covid19track-app.netlify.app/](https://covid19track-app.netlify.app/)
+
 ## Built With
 
 - REACT
